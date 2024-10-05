@@ -64,7 +64,7 @@ export function SignIn() {
         });
       });
 
-      navigate("/dashboard/home");
+      navigate("/chat");
       console.log(data);
     } catch (err) {
       toast({
@@ -82,7 +82,7 @@ export function SignIn() {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userInfo"));
-    if (user) navigate("/dashboard/home");
+    if (user) navigate("/chat");
   }, [navigate]);
 
   return (

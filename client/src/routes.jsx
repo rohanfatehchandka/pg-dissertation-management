@@ -41,10 +41,10 @@ export const routes = [
     layout: "dashboard",
     pages: [
       {
-        icon: <HomeIcon {...icon} />,
-        name: "dashboard",
-        path: "home",
-        element: <Home />,
+        icon: <ChatBubbleLeftRightIcon {...icon}  />,
+        name: "Chat",
+        path: "chat",
+        element: <ChatPage/>,
       },
       {
         icon: <UserCircleIcon {...icon} />,
@@ -64,30 +64,30 @@ export const routes = [
         path: "connection",
         element: <PendingConnections />,
       },
-      {
-        icon: <TableCellsIcon {...icon} />,
-        name: "tables",
-        path: "tables",
-        element: <Tables />,
-      },
-      {
-        icon: <BellIcon {...icon} />,
-        name: "notifications",
-        path: "mentor-notifications",
-        element: <Notifications />,
-      },
-      {
-        icon: <BellIcon {...icon} />,
-        name: "user-details",
-        path: "mentor/:id",
-        element: <MentorMonitor />,
-      },
-      {
-        icon: <ClipboardDocumentListIcon {...icon} />,
-        name: "tasks",
-        path: "student",
-        element: <StudentTasks />,
-      },
+      // {
+      //   icon: <TableCellsIcon {...icon} />,
+      //   name: "tables",
+      //   path: "tables",
+      //   element: <Tables />,
+      // },
+      // {
+      //   icon: <BellIcon {...icon} />,
+      //   name: "notifications",
+      //   path: "mentor-notifications",
+      //   element: <Notifications />,
+      // },
+      // {
+      //   icon: <BellIcon {...icon} />,
+      //   name: "user-details",
+      //   path: "mentor/:id",
+      //   element: <MentorMonitor />,
+      // },
+      // {
+      //   icon: <ClipboardDocumentListIcon {...icon} />,
+      //   name: "tasks",
+      //   path: "student",
+      //   element: <StudentTasks />,
+      // },
       {
         icon: <VideoCameraIcon {...icon} />,
         name: "Video Call",
@@ -100,36 +100,36 @@ export const routes = [
         path: "/room/:roomId",
         element: <Room />,
       },
-      {
-        icon: <ClipboardIcon {...icon} />,
-        name: "DocAnalyser",
-        path: "chatbot",
-        element: <Chatbot />,
-      },
-      {
-        icon: <ClipboardDocumentListIcon {...icon} />,
-        name: "Summarization",
-        path: "summary",
-        element: <Summary />,
-      },
-      {
-        icon: <ClipboardDocumentIcon {...icon} />,
-        name: "Upload Files",
-        path: "thesisupload",
-        element: <ThesisUpload />,
-      },
-      {
-        icon: <VideoCameraIcon {...icon} />,
-        name: "preview",
-        path: "/preview/thesis/:id",
-        element: <ThesisPreview />,
-      },
-      {
-        icon: <BookOpenIcon {...icon} />,
-        name: "Science Bot",
-        path: "scibot",
-        element: <Scibot />,
-      },
+      // {
+      //   icon: <ClipboardIcon {...icon} />,
+      //   name: "DocAnalyser",
+      //   path: "chatbot",
+      //   element: <Chatbot />,
+      // },
+      // {
+      //   icon: <ClipboardDocumentListIcon {...icon} />,
+      //   name: "Summarization",
+      //   path: "summary",
+      //   element: <Summary />,
+      // },
+      // {
+      //   icon: <ClipboardDocumentIcon {...icon} />,
+      //   name: "Upload Files",
+      //   path: "thesisupload",
+      //   element: <ThesisUpload />,
+      // },
+      // {
+      //   icon: <VideoCameraIcon {...icon} />,
+      //   name: "preview",
+      //   path: "/preview/thesis/:id",
+      //   element: <ThesisPreview />,
+      // },
+      // {
+      //   icon: <BookOpenIcon {...icon} />,
+      //   name: "Science Bot",
+      //   path: "scibot",
+      //   element: <Scibot />,
+      // },
       // {
       //   icon: <BookOpenIcon {...icon} />,
       //   name: "IPFS",
@@ -144,17 +144,17 @@ export const routes = [
       // },
     ],
   },
-  {
-    layout: "chat",
-    pages: [
-      {
-        icon: <ChatBubbleLeftRightIcon {...icon} />,
-        name: "chat",
-        path: "",
-        element: <ChatPage />,
-      },
-    ],
-  },
+  // {
+  //   layout: "chat",
+  //   pages: [
+  //     {
+  //       icon: <ChatBubbleLeftRightIcon {...icon} />,
+  //       name: "chat",
+  //       path: "",
+  //       element: <ChatPage />,
+  //     },
+  //   ],
+  // },
   {
     layout: "auth",
     pages: [
